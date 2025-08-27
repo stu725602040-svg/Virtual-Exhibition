@@ -9,7 +9,7 @@ const artworks = [
     id: 1,
     title: "Bác sĩ Phạm Ngọc Thạch",
     description:
-      "Nguyên bộ trưởng bộ y tế Việt Nam Dân chủ Cộng hòa; Ngày 21/04/1945, tổ chức Thanh niên Tiền phong được thành lập và do bác sĩ Phạm Ngọc Thạch làm Chủ tịch Hội đồng quản trị.",
+      "Nguyên bộ trưởng Bộ Y tế Việt Nam Dân chủ Cộng hòa; Ngày 21/04/1945, tổ chức Thanh niên Tiền phong được thành lập và do bác sĩ Phạm Ngọc Thạch làm Chủ tịch Hội đồng quản trị.",
     category: "characters",
     image: "./image/pham_ngoc_thach.jpg",
   },
