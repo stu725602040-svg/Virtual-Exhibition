@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Triển lãm “Thời cơ vàng” - Kỷ niệm 80 năm Cách mạng tháng Tám thành công
+      và Quốc khánh nước CHXHCN Việt Nam
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-university"></i>
+          <span>Bảo Tàng AI</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Trang Chủ</a></li>
+          <li><a href="#gallery" class="nav-link">Triển Lãm</a></li>
+          <li><a href="#video" class="nav-link">Phòng Chiếu</a></li>
+          <li><a href="#audio" class="nav-link">Âm Hưởng Cách Mạng</a></li>
+          <li><a href="#infographic" class="nav-link">Infographic</a></li>
+        </ul>
+        <div class="nav-controls">
+          <button id="langToggle" class="btn-control">
+            <i class="fas fa-language"></i>
+          </button>
+          <button id="themeToggle" class="btn-control">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+      <div class="hero-banner">
+        <div class="hero-content">
+          <h1 class="hero-title">80 Năm Cách Mạng Tháng Tám</h1>
+          <p class="hero-subtitle">Lịch sử trong kỷ nguyên số</p>
+          <p class="hero-description">
+            Khám phá lịch sử vẻ vang của dân tộc Việt Nam qua những tác phẩm
+            nghệ thuật
+          </p>
+          <button class="btn-primary" onclick="startTour()">
+            <i class="fas fa-play"></i>
+            Bắt Đầu Tham Quan
+          </button>
+        </div>
+        <div class="hero-image">
+          <img src="./Banner1.png" alt="Cách mạng Tháng Tám" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <h2 class="section-title">Khu Vực Triển Lãm</h2>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">Tất Cả</button>
+          <button class="filter-btn" data-filter="characters">Nhân Vật</button>
+          <button class="filter-btn" data-filter="events">Sự Kiện</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Artworks will be loaded here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="section video-section">
+      <div class="container">
+        <h2 class="section-title">Phòng Chiếu</h2>
+        <div class="video-container">
+          <div class="video-player">
+            <img src="./19-8-1945.png" alt="Video Cách mạng Tháng Tám" />
+            <div class="video-overlay">
+              <button class="play-btn" onclick="playVideo()">
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>Diễn Biến Cách Mạng Tháng Tám</h3>
+            <p>
+              Từ khi phát xít Nhật đầu hàng đến khi quân đội đồng minh xuất
+              hiện, được Hồ Chí Minh và Trung ương Đảng xác định là thời cơ
+              chiến lược của cách mạng Việt Nam. Hồ Chí Minh chỉ thị: “Lúc này,
+              THỜI CƠ thuận lợi đã tới, dù hi sinh tới đâu, dù phải đốt cháy cả
+              dãy Trường Sơn cũng phải kiên quyết giành cho được ĐỘC LẬP”.
+            </p>
+            <div class="video-controls">
+              <button class="btn-secondary">
+                <i class="fas fa-closed-captioning"></i>
+                Phụ Đề
+              </button>
+              <button class="btn-secondary">
+                <i class="fas fa-share"></i>
+                Chia Sẻ
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audio Section -->
+    <section id="audio" class="section audio-section">
+      <div class="container">
+        <h2 class="section-title">Âm Hưởng Cách Mạng</h2>
+        <div class="audio-grid">
+          <div class="audio-card">
+            <div class="audio-icon">
+              <i class="fas fa-music"></i>
+            </div>
+            <h3>Mười Chín Tháng Tám</h3>
+            <p>
+              “Mười chín tháng Tám” là hành khúc cách mạng của nhạc sĩ Xuân
+              Oanh, ra đời ngay trong khí thế Tổng khởi nghĩa ở Hà Nội ngày
+              19/8/1945.
+            </p>
+            <div class="audio-controls">
+              <button class="play-audio-btn" data-audio="muoi_chin_thang_tam">
+                <i class="fas fa-play"></i>
+              </button>
+              <button class="stop-audio-btn" data-audio="muoi_chin_thang_tam">
+                <i class="fas">🔁</i>
+              </button>
+              <span class="audio-duration">2:11</span>
+            </div>
+          </div>
+
+          <div class="audio-card">
+            <div class="audio-icon">
+              <i class="fas fa-music"></i>
+            </div>
+            <h3>Cùng Nhau Đi Hồng Binh</h3>
+            <p>
+              “Cùng nhau đi Hồng binh” là bản hành khúc của nhạc sĩ Đinh Nhu
+              (khoảng 1930), thường được xem là một trong những ca khúc cách
+              mạng sớm nhất.
+            </p>
+            <div class="audio-controls">
+              <button
+                class="play-audio-btn"
+                data-audio="cung_nhau_di_hong_binh"
+              >
+                <i class="fas fa-play"></i>
+              </button>
+              <button
+                class="stop-audio-btn"
+                data-audio="cung_nhau_di_hong_binh"
+              >
+                <i class="fas">🔁</i>
+              </button>
+              <span class="audio-duration">2:33</span>
+            </div>
+          </div>
+
+          <div class="audio-card">
+            <div class="audio-icon">
+              <i class="fas fa-music"></i>
+            </div>
+            <h3>Lên Đàng</h3>
+            <p>
+              "Lên đàng" là một bài hát của hai nhạc sĩ Lưu Hữu Phước và Huỳnh
+              Văn Tiểng ra đời vào năm 1944, được phổ biến rộng rãi trong thanh
+              thiếu niên và học sinh.
+            </p>
+            <div class="audio-controls">
+              <button class="play-audio-btn" data-audio="len_dang">
+                <i class="fas fa-play"></i>
+              </button>
+              <button class="stop-audio-btn" data-audio="len_dang">
+                <i class="fas">🔁</i>
+              </button>
+              <span class="audio-duration">3:29</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Infographic Section -->
+    <section id="infographic" class="section infographic-section">
+      <div class="container">
+        <h2 class="section-title">Timeline Tương Tác</h2>
+        <div class="timeline-container">
+          <div class="timeline" id="timeline">
+            <!-- Timeline events will be loaded here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz Modal (quiz nội bộ) -->
+    <div id="quizModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Kiểm Tra Kiến Thức</h2>
+        <div id="quizContent">
+          <div class="quiz-container">
+            <div class="quiz-question">
+              <h3 id="questionText">Đang tải câu hỏi...</h3>
+            </div>
+            <div class="quiz-options" id="quizOptions"></div>
+            <div class="quiz-controls">
+              <button class="quiz-btn quiz-btn-primary" id="nextQuestion">
+                Câu tiếp theo
+              </button>
+              <button class="quiz-btn quiz-btn-secondary" id="restartQuiz">
+                Làm lại
+              </button>
+            </div>
+            <div class="quiz-score">
+              <span id="scoreDisplay">Điểm: 0/0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Artwork Modal -->
+    <div id="artworkModal" class="modal">
+      <div class="modal-content artwork-modal">
+        <span class="close">&times;</span>
+        <div class="artwork-detail">
+          <div class="artwork-image">
+            <img id="modalArtworkImage" src="/placeholder.svg" alt="" />
+          </div>
+          <div class="artwork-info">
+            <h2 id="modalArtworkTitle"></h2>
+            <p id="modalArtworkDescription"></p>
+            <div class="artwork-controls">
+              <button class="btn-secondary" onclick="shareArtwork()">
+                <i class="fas fa-share"></i>
+                Chia Sẻ
+              </button>
+              <!-- Nút Quiz mở quiz nội bộ -->
+              <button class="btn-secondary" onclick="startQuiz()">
+                <i class="fas fa-question-circle"></i>
+                Quiz
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
