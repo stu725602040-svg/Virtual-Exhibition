@@ -15,11 +15,12 @@ const artworks = [
   },
   {
     id: 2,
-    title: "Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập",
+    title:
+      "Nhân dân ở nhiều địa phương nổi dậy đánh chiếm kho thóc Nhật để cứu đói",
     description:
-      "Khoảng 14h ngày 2/9/1945, tức chỉ sau vài giờ đồng hồ kể từ sự kiện phát xít Nhật kí văn kiện đầu hàng, Chính phủ Lâm thời nước Việt Nam Dân chủ Cộng hòa đã ra mắt quốc dân đồng bào cả nước. Chủ tịch Hồ Chí Minh đọc bản tuyên ngôn độc lập, khai sinh ra nước Việt Nam Dân chủ Cộng hòa.",
-    category: "characters",
-    image: "./image/chu_tich_hcm.jpg",
+      "Từ ngày 9/3/1945, tin tức về sự kiện Nhật đảo chính Pháp tràn ngập các mặt báo. 12/3, Đảng ra chỉ thị: “Nhật Pháp bắn nhau và hành động của chúng ta”. Cao trào kháng Nhật cứu nước được phát động mạnh mẽ trong cả nước. Cả dân tộc bước vào thời kì chuẩn bị chiến lược, tiến tới Tổng khởi nghĩa.",
+    category: "events",
+    image: "./image/nhat-phap-ban-nhau-va-chi-thi-cua-chung-ta.jpg",
   },
   {
     id: 3,
@@ -48,62 +49,53 @@ const artworks = [
   },
   {
     id: 6,
-    title:
-      "Nhân dân ở nhiều địa phương nổi dậy đánh chiếm kho thóc Nhật để cứu đói",
+    title: "Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập",
     description:
-      "Từ ngày 9/3/1945, tin tức về sự kiện Nhật đảo chính Pháp tràn ngập các mặt báo. 12/3, Đảng ra chỉ thị: “Nhật Pháp bắn nhau và hành động của chúng ta”. Cao trào kháng Nhật cứu nước được phát động mạnh mẽ trong cả nước. Cả dân tộc bước vào thời kì chuẩn bị chiến lược, tiến tới Tổng khởi nghĩa.",
-    category: "events",
-    image: "./image/nhat-phap-ban-nhau-va-chi-thi-cua-chung-ta.jpg",
+      "Khoảng 14h ngày 2/9/1945, tức chỉ sau vài giờ đồng hồ kể từ sự kiện phát xít Nhật kí văn kiện đầu hàng, Chính phủ Lâm thời nước Việt Nam Dân chủ Cộng hòa đã ra mắt quốc dân đồng bào cả nước. Chủ tịch Hồ Chí Minh đọc bản tuyên ngôn độc lập, khai sinh ra nước Việt Nam Dân chủ Cộng hòa.",
+    category: "characters",
+    image: "./image/chu_tich_hcm.jpg",
   },
 ];
 
 const timelineEvents = [
   {
     date: "14/08/1945",
-    title: "Khởi nghĩa xảy ra.",
+    title: "",
     description:
       "Khởi nghĩa nổ ra tại nhiều xã, huyện ở Quảng Ngãi, Thanh Hóa,...",
   },
   {
     date: "16/08/1945",
-    title: "Giải phóng Thái Nguyên",
+    title: "",
     description:
       "Võ Nguyên Giáp chỉ huy lực lượng vũ trang tiến về giải phóng thị xã Thái Nguyên.",
   },
   {
     date: "18/08/1945",
-    title: "Bốn tỉnh giành được chính quyền",
+    title: "",
     description:
       "Bắc Giang, Hải Dương, Hà Tĩnh và Quảng Nam giành được chính quyền ở tỉnh lị sớm nhất cả nước.",
   },
   {
     date: "19/08/1945",
-    title: "Khởi nghĩa thắng lợi ở Hà Nội",
-    description:
-      "Đánh dấu sự thành công của Cách mạng Tháng Tám và sự ra đời của Nhà nước Việt Nam Dân chủ Cộng hòa",
+    title: "",
+    description: "Khởi nghĩa thắng lợi ở Hà Nội",
   },
   {
     date: "23/08/1945",
-    title: "Khởi nghĩa thắng lợi ở Huế",
-    description:
-      "Hàng vạn người dân tập trung, lật đổ hoàn toàn chính quyền bù nhìn",
+    title: "",
+    description: "Khởi nghĩa thắng lợi ở Huế",
   },
   {
     date: "25/08/1945",
-    title: "Giải phóng Sài Gòn",
-    description: "Cuộc khởi nghĩa thành công tại Sài Gòn",
+    title: "",
+    description: "Khởi nghĩa thắng lợi ở Sài Gòn",
   },
   {
     date: "28/08/1945",
-    title: "Đồng Nai Thượng và Hà Tiên giành chính quyền",
+    title: "",
     description:
       "Đồng Nai Thượng và Hà Tiên là hai tỉnh cuối cùng giành được chính quyền",
-  },
-  {
-    date: "02/09/1945",
-    title: "Tuyên ngôn Độc lập",
-    description:
-      "Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập, khai sinh nước Việt Nam Dân chủ Cộng hòa",
   },
 ];
 
@@ -176,34 +168,40 @@ const quizBank = {
   ],
 
   // 2) Chủ tịch HCM đọc Tuyên ngôn Độc lập – 02/09/1945 Ba Đình
+
   2: [
     {
-      question: "Tuyên ngôn Độc lập được đọc vào ngày nào?",
-      options: ["19/08/1945", "02/09/1945", "25/08/1945", "30/08/1945"],
-      correct: 1,
-    },
-    {
-      question: "Địa điểm đọc Tuyên ngôn Độc lập:",
+      question: "Sự kiện nào xảy ra ngày 9/3/1945?",
       options: [
-        "Quảng trường Ba Đình",
-        "Nhà hát Lớn Hà Nội",
-        "Phủ Chủ tịch",
-        "Hồ Hoàn Kiếm",
+        "Nhật đảo chính Pháp ở Đông Dương",
+        "Pháp đảo chính Nhật",
+        "Tổng tuyển cử đầu tiên",
+        "Toàn quốc kháng chiến",
       ],
       correct: 0,
     },
     {
-      question: "Sự kiện này khai sinh nhà nước nào?",
+      question: "Ngày 12/3/1945, Đảng ra chỉ thị nào được nêu trong mô tả?",
       options: [
-        "Quốc gia Việt Nam",
-        "Việt Nam Cộng hòa",
-        "Việt Nam Dân chủ Cộng hòa",
-        "Cộng hòa Xã hội chủ nghĩa Việt Nam",
+        "Sửa đổi lối làm việc",
+        "Kháng chiến kiến quốc",
+        "Nhật Pháp bắn nhau và hành động của chúng ta",
+        "Toàn dân khởi nghĩa",
       ],
       correct: 2,
     },
+    {
+      question:
+        "Hành động nào của nhân dân được nêu để cứu đói trong thời kỳ này?",
+      options: [
+        "Đánh chiếm kho thóc Nhật",
+        "Tổng tuyển cử",
+        "Tuyên ngôn Độc lập",
+        "Ký Hiệp định Sơ bộ",
+      ],
+      correct: 0,
+    },
   ],
-
   // 3) Nhà hát Lớn Hà Nội – mít-tinh của Việt Minh 19/08/1945
   3: [
     {
@@ -280,41 +278,34 @@ const quizBank = {
       correct: 1,
     },
   ],
-
-  // 6) Cao trào kháng Nhật cứu nước – chỉ thị 12/3/1945, kho thóc Nhật, chuẩn bị Tổng khởi nghĩa
   6: [
     {
-      question: "Sự kiện nào xảy ra ngày 9/3/1945?",
+      question: "Tuyên ngôn Độc lập được đọc vào ngày nào?",
+      options: ["19/08/1945", "02/09/1945", "25/08/1945", "30/08/1945"],
+      correct: 1,
+    },
+    {
+      question: "Địa điểm đọc Tuyên ngôn Độc lập:",
       options: [
-        "Nhật đảo chính Pháp ở Đông Dương",
-        "Pháp đảo chính Nhật",
-        "Tổng tuyển cử đầu tiên",
-        "Toàn quốc kháng chiến",
+        "Quảng trường Ba Đình",
+        "Nhà hát Lớn Hà Nội",
+        "Phủ Chủ tịch",
+        "Hồ Hoàn Kiếm",
       ],
       correct: 0,
     },
     {
-      question: "Ngày 12/3/1945, Đảng ra chỉ thị nào được nêu trong mô tả?",
+      question: "Sự kiện này khai sinh nhà nước nào?",
       options: [
-        "Sửa đổi lối làm việc",
-        "Kháng chiến kiến quốc",
-        "Nhật Pháp bắn nhau và hành động của chúng ta",
-        "Toàn dân khởi nghĩa",
+        "Quốc gia Việt Nam",
+        "Việt Nam Cộng hòa",
+        "Việt Nam Dân chủ Cộng hòa",
+        "Cộng hòa Xã hội chủ nghĩa Việt Nam",
       ],
       correct: 2,
     },
-    {
-      question:
-        "Hành động nào của nhân dân được nêu để cứu đói trong thời kỳ này?",
-      options: [
-        "Đánh chiếm kho thóc Nhật",
-        "Tổng tuyển cử",
-        "Tuyên ngôn Độc lập",
-        "Ký Hiệp định Sơ bộ",
-      ],
-      correct: 0,
-    },
   ],
+  // 6) Cao trào kháng Nhật cứu nước – chỉ thị 12/3/1945, kho thóc Nhật, chuẩn bị Tổng khởi nghĩa
 };
 
 // ===== Audio links =====
